@@ -1,0 +1,1 @@
+In this project, I will recreate the google homepage. It will look really similar and be amazing because I am amazing. That is all.
