@@ -1,0 +1,129 @@
+html {
+    height: 100%;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav"
+                         "main"
+                         "footer";
+    grid-template-rows: 35px 1fr 40px;;
+    margin: 0px;
+}
+#main-search {
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    grid-area: main;
+}
+#google-logo {
+    height: 92px;
+    width: 272px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 30%;
+}
+#google-search {
+    height: 39px;
+    width: 420px;
+    padding-left: 15px;
+    padding-right: 39px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 39px;
+    border: 0.5px solid lightgray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-image: url(google-transparent-microphone.png);
+    background-position: 97%;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+}
+#google-search:focus, #google-search:hover {
+    outline: none;
+    border: 1px solid #c6c6c6;
+    box-shadow: 1px 1px 5px #999;
+}
+#nav-bar {
+    margin-top: 10px;
+    font-size: .825em;
+    grid-area: nav;
+    display: grid;
+    grid-template-areas: "nav-left nav-right";
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-bar a {
+    padding: 8px;
+    color: #000;
+    text-decoration: none;
+}
+#nav-bar ul, #google-footer ul{
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#nav-bar li, #google-footer li{
+    display: inline;
+}
+#nav-bar a:hover, #google-footer a:hover {
+    text-decoration: underline;
+}
+#google-footer a {
+    color: #5f6368;
+    text-decoration: none;
+    line-height: 40px;
+    padding: 10px;
+}
+#google-footer {
+    background-color: #F2F2F2;
+    border: 1px solid #e4e4e4;
+    grid-area: footer;
+    display: grid;
+    font-size: .825em;
+    grid-template-areas: "footer-left footer-right";
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+}
+#search-buttons {
+    text-align: center;
+}
+.footer-left {
+    grid-area: footer-left;
+    padding-left: 15px;
+}
+.footer-right {
+    grid-area: footer-right;
+    padding-right: 15px;
+}
+.nav-right {
+    grid-area: nav-right;
+    margin: 10px 10px;
+}
+.nav-left {
+    grid-area: nav-left;
+    margin: 10px 10px;
+}
+input.search-button {
+    text-align: center;
+    font-size: .85em;
+    font-weight: 400;
+    background-color:#f2f2f2;
+    color: #5F6368;
+    border-radius: 4px;
+    border: 1px solid #f2f2f2;
+    padding: 10px 15px;
+    margin: 5px 5px;
+}
+.nav-right img {
+    display: inline;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 0px;
+}
