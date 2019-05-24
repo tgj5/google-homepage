@@ -1,1 +1,1 @@
-In this project, I will recreate the google homepage. It will look really similar and be amazing because I am amazing. That is all.
+This is a simple recreation of the Google.com homepage using only HTML and CSS. This project was done to practice implementing designs in webpages, as well as applying basic HTML/CSS skills. The project was also useful in practicing using the CSS Grid structure to achieve more control over page layout and element positioning.
